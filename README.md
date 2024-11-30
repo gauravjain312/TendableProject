@@ -1,24 +1,19 @@
 # TendableProject
 Assignment for Tendable Tech Challenge by Gaurav Jain (gauravjain.testing@gmail.com)
 
-main Folder under which code is organized
-TendableProject
-
-When code is downloaded as .zip file from GitHub, unzip and rename "TendableProject-main" to "TendableProject". Copy folder to C:\ or D:\
-
 ## Software & Tools
 1. IntelliJ Community Edition 2024.2.1
-2. Chrome v131.0.6778.86
-3. Edge v131.0.2903.70
+2. Chrome v131.0.6778.86. Driver is included with code
+3. Edge v131.0.2903.70. Driver is included with code
 
 ## Strategy
 1. I have used Singleton pattern for WebDriver initialization. PageFactory is used for organizing Page objects in Selenium using Java.
 2. CSS selectors are used for Page Objects
-3. No hard coded values are used in code. Environment related values like Browser, Base URL, page URL's are organized in properties file. Similarly data for entering values in Contact page are also organized in properties file
-4. Top Menu objects are organized in HomePage Page Objects class even though we click on all Top Menu options. This is done to reduce duplication of same objects across Page Objects classes for each Top Menu page. 
+3. No hard coded values are used in code. Environment related values like Browser, Base URL, page URL's and Page Titles are organized in properties file. Similarly data for entering values in Contact page are also organized in properties file
+4. Top Menu objects are organized in HomePage Page Objects class. This is done to reduce duplication of same objects across Page Objects classes for each Top Menu page. 
 4. Code can run for either Chrome (131.0.6778.86) or Edge(131.0.2903.70). Refer How to Run section
 5. Maven (for Build) and TestNG (for Tests) have been used
-6. Code has been documented with suitable comments wherever necessary
+6. Code has been documented with suitable comments
 7. Results of execution on Chrome and Edge are present in Results folder
 
 ## Configuration & Structure
@@ -42,5 +37,5 @@ When code is downloaded as .zip file from GitHub, unzip and rename "TendableProj
 
 ## How to Run
 1. Ensure Webdriver version matches the browser present on machine.
-2. For running on Chrome Browser. keep "browser = chrome" in env.properties. Run TestNG Project to execute tests on Chrome Browser
-3. For running on Edge Browser. keep "browser = edge" in env.properties. Run TestNG Project to execute tests on Edge Browser
+2. For running on Chrome Browser. update "browser = chrome" in env.properties. Run TestNG Project to execute tests on Chrome Browser
+3. For running on Edge Browser. update "browser = edge" in env.properties. Run TestNG Project to execute tests on Edge Browser
