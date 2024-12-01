@@ -3,8 +3,8 @@ Assignment for Tendable Tech Challenge by Gaurav Jain (gauravjain.testing@gmail.
 
 ## Software & Tools
 1. IntelliJ Community Edition 2024.2.1 for Windows 11
-2. Chrome v131.0.6778.86. Driver is included with code
-3. Edge v131.0.2903.70. Driver is included with code
+2. Chrome Browser v131.0.6778.86. Driver is included with code
+3. Edge Browser v131.0.2903.70. Driver is included with code
 
 ## Strategy
 1. I have used Singleton pattern for WebDriver initialization. PageFactory is used for organizing Page objects in Selenium using Java.
@@ -39,4 +39,4 @@ Assignment for Tendable Tech Challenge by Gaurav Jain (gauravjain.testing@gmail.
 1. Ensure Webdriver version matches the browser present on machine.
 2. For running on Chrome Browser. update "browser = chrome" in env.properties. Run TestNG Project to execute tests on Chrome Browser
 3. For running on Edge Browser. update "browser = edge" in env.properties. Run TestNG Project to execute tests on Edge Browser
-4. Folder BrowserDrivers in framework code has Chrome and Edge Webdrivers. You may need to manually change value of the BrowserDrivers in env.properties. Look at variable "webDriverPath" in the env.properties file.
+4. Folder BrowserDrivers in framework code has Chrome and Edge Webdrivers downloaded already
