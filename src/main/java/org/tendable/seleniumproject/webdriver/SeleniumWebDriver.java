@@ -14,7 +14,9 @@ public class SeleniumWebDriver {
 
     // Create the driver instance based on the browser name
     private void initializeWebDriver(String browser) {
-        String webDriverPath = getPropFile.getEnvPropertyValue("webDriverPath");
+        String webDriverPath = System.getProperty("user.dir")
+                .concat(getPropFile.getEnvPropertyValue("webDriverPath"));
+        
         if (browser.equalsIgnoreCase("chrome")) {
             System.setProperty("webdriver.chrome.driver", webDriverPath.concat("/chromedriver.exe"));
             ChromeOptions options = new ChromeOptions();
