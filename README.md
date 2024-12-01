@@ -2,7 +2,7 @@
 Assignment for Tendable Tech Challenge by Gaurav Jain (gauravjain.testing@gmail.com)
 
 ## Software & Tools
-1. IntelliJ Community Edition 2024.2.1
+1. IntelliJ Community Edition 2024.2.1 for Windows 11
 2. Chrome v131.0.6778.86. Driver is included with code
 3. Edge v131.0.2903.70. Driver is included with code
 
@@ -39,3 +39,4 @@ Assignment for Tendable Tech Challenge by Gaurav Jain (gauravjain.testing@gmail.
 1. Ensure Webdriver version matches the browser present on machine.
 2. For running on Chrome Browser. update "browser = chrome" in env.properties. Run TestNG Project to execute tests on Chrome Browser
 3. For running on Edge Browser. update "browser = edge" in env.properties. Run TestNG Project to execute tests on Edge Browser
+4. You may need to manually change value of the folder where ChromeDriver and EdgeDriver are located. Look at variable "webDriverPath" in the env.properties file.
